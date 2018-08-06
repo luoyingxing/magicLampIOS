@@ -14,9 +14,12 @@
 		66F36FF021182E7000F19B18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F36FEF21182E7000F19B18 /* Assets.xcassets */; };
 		66F36FF321182E7000F19B18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F36FF121182E7000F19B18 /* LaunchScreen.storyboard */; };
 		66F36FF621182E7000F19B18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F36FF521182E7000F19B18 /* main.m */; };
+		F0957936A74A05B3D7880387 /* libPods-magicLampIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8FD762F0D17F7F6989E0E1 /* libPods-magicLampIOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A8FD762F0D17F7F6989E0E1 /* libPods-magicLampIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-magicLampIOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		500B3F3E51DFB91A8E81726D /* Pods-magicLampIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magicLampIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-magicLampIOS/Pods-magicLampIOS.release.xcconfig"; sourceTree = "<group>"; };
 		66F36FE021182E7000F19B18 /* magicLampIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = magicLampIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F36FE321182E7000F19B18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		66F36FE421182E7000F19B18 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		66F36FF221182E7000F19B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66F36FF421182E7000F19B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66F36FF521182E7000F19B18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F6EA697A70B2C0BAFED945F /* Pods-magicLampIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-magicLampIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-magicLampIOS/Pods-magicLampIOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0957936A74A05B3D7880387 /* libPods-magicLampIOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E782BC072A3934F477D49D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F6EA697A70B2C0BAFED945F /* Pods-magicLampIOS.debug.xcconfig */,
+				500B3F3E51DFB91A8E81726D /* Pods-magicLampIOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		66F36FD721182E7000F19B18 = {
 			isa = PBXGroup;
 			children = (
 				66F36FE221182E7000F19B18 /* magicLampIOS */,
 				66F36FE121182E7000F19B18 /* Products */,
+				0E782BC072A3934F477D49D8 /* Pods */,
+				C1D8BE7F70D779EFB9D26F43 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +90,14 @@
 			path = magicLampIOS;
 			sourceTree = "<group>";
 		};
+		C1D8BE7F70D779EFB9D26F43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A8FD762F0D17F7F6989E0E1 /* libPods-magicLampIOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,9 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66F36FF921182E7000F19B18 /* Build configuration list for PBXNativeTarget "magicLampIOS" */;
 			buildPhases = (
+				4C6017E48EC88F90853AA1A0 /* [CP] Check Pods Manifest.lock */,
 				66F36FDC21182E7000F19B18 /* Sources */,
 				66F36FDD21182E7000F19B18 /* Frameworks */,
 				66F36FDE21182E7000F19B18 /* Resources */,
+				703A456AD6DFE24EFD3DA18B /* [CP] Embed Pods Frameworks */,
+				6AC1EC97EEE9C42B0BA5135C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C6017E48EC88F90853AA1A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-magicLampIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AC1EC97EEE9C42B0BA5135C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-magicLampIOS/Pods-magicLampIOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		703A456AD6DFE24EFD3DA18B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-magicLampIOS/Pods-magicLampIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		66F36FDC21182E7000F19B18 /* Sources */ = {
@@ -280,6 +358,7 @@
 		};
 		66F36FFA21182E7000F19B18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F6EA697A70B2C0BAFED945F /* Pods-magicLampIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +374,7 @@
 		};
 		66F36FFB21182E7000F19B18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 500B3F3E51DFB91A8E81726D /* Pods-magicLampIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

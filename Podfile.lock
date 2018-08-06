@@ -1,0 +1,15 @@
+PODS:
+  - Masonry (1.1.0)
+  - SDAutoLayout (2.2.0)
+
+DEPENDENCIES:
+  - Masonry
+  - SDAutoLayout
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDAutoLayout: c5509e77ae75735d9a39f7bc83dba6d3f75d49d8
+
+PODFILE CHECKSUM: 14c057ba8c1b2d9de705178842d28e3441346490
+
+COCOAPODS: 1.4.0
